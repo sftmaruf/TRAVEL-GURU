@@ -7,17 +7,14 @@
 .login-container{
     height: 90vh;
     display: flex;
-    margin-top: 20px;
+    margin-top: 13%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     color: black;
-    /* border: 3px solid red; */
  }
 
  .alignment h6{
      font-size: 20px;
-     /* border: 1px solid red; */
      margin: 0px;
  }
 

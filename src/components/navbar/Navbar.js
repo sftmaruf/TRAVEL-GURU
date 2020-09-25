@@ -179,7 +179,7 @@ const Navbar = (props) => {
 
     return (
         <div className={classes.grow}>
-            <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none', alignItems: 'center' }}>
+            <AppBar position="sticky" style={{ background: 'transparent', boxShadow: 'none', alignItems: 'center' }}>
                 <Toolbar>
                     <IconButton
                         edge="start"
