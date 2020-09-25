@@ -1,0 +1,70 @@
+.alignment{
+    border: 1px solid #ABABAB;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.login-container{
+    height: 90vh;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* border: 3px solid red; */
+ }
+
+ .alignment h6{
+     font-size: 20px;
+     /* border: 1px solid red; */
+     margin: 0px;
+ }
+
+ .divider-design {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+ .divider-design::before, .divider-design::after{
+    content: '';
+    margin-right: .25em;
+    margin-left: .25em;
+    flex: 1;
+    border-bottom: 1px solid #000;
+ }
+
+ .login-input-design{
+     border: none;
+     width: 100%;
+     border-bottom: 1px solid #C5C5C5;
+ }
+
+ .login-input-design:focus{
+     outline: none;
+ }
+
+ .alignment input{
+    margin-bottom: 20px;
+ }
+
+ .utilities-design{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+
+ .text-color{
+     color: rgb(249, 165, 26);
+ }
+
+ .center-align{
+    margin: 10px;
+    text-align: center;
+ }
+
+ #checkbox-label{
+     margin-left: 10px;
+ }

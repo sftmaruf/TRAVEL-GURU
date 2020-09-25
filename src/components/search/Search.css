@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap');
+
+.search-container{
+    display: flex;
+    border-top: 1px solid #D1D1D1;
+    padding-top: 20px;
+    margin: 20px 90px;
+}
+
+@media(max-width: 1005px){
+    .search-container{
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.hotel-container{
+    flex: 1;
+    min-width: 950px;
+}
+
+@media(max-width: 950px){
+    .hotel-container{
+        min-width: 340px;
+    }
+}
+
+.map-component{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.hotel-header{
+    margin-left: 20px;
+}
+
+.hotel-header h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}

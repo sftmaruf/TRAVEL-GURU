@@ -1,0 +1,56 @@
+.card-container{
+    width: 470px;
+    height: auto;
+    border-radius: 5px;
+    padding: 30px 20px;
+    background: #FFFFFF;
+}
+
+.card-alignment{
+    margin-left: 30%;
+}
+
+@media(max-width: 882px){
+    .card-alignment{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 520px){
+    .card-container{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-alignment{
+        margin-left: 0;
+    }
+}
+
+label{
+    color: black;
+}
+.warning-color{
+    color: red;
+}
+
+.input-design{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: #F2F2F2;
+}
+
+.button-width{
+    width: 100%;
+}
+
+.datepicker-container{
+    display: flex;
+    flex-direction: row;
+}

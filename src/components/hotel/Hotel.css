@@ -1,0 +1,49 @@
+.hotel-component{
+     /* width: 58rem; */
+     display: flex;
+     height: 250px;
+     overflow: hidden;
+     flex-direction: row;
+     margin: 20px;
+     border: none;
+ } 
+
+ @media(max-width: 1338px){
+    .hotel-component{
+        flex-direction: column;
+        min-width: 340px;
+        max-width: 400px;
+        height: auto;
+    }
+ }
+
+.hotel-image{
+    max-width: 330px;
+    max-height: 230px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.hotel-name{
+    font-weight: 600;
+}
+
+.color{
+    color: #6A6A6A;
+}
+
+.footer{
+    display: flex;
+}
+
+.footer-alignment{
+    margin-left: 30px;
+}
+
+.rating-icon{
+    color: orange;
+}
+
+.total-color{
+    color: #898989;
+}
