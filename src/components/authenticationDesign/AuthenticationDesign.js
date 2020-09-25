@@ -89,7 +89,7 @@ const AuthenticationDesign = (props) => {
 
     return (
         <div className = "login-container">
-            <div>
+            <div className = "login-component">
                 <div className="card-container alignment">
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <h6>{type}</h6><br />
@@ -137,7 +137,7 @@ const AuthenticationDesign = (props) => {
 
                     </form>
                 </div>
-                <div>
+                <div className = "loginthrough-container">
                     <div className="divider-design">Or</div>
                     <LoginThrough handleFacebookSignIn={handleFacebookSignIn} logo="facebook"></LoginThrough>
                     <LoginThrough handleGoogleSignIn={handleGoogleSignIn} logo="google"></LoginThrough>
