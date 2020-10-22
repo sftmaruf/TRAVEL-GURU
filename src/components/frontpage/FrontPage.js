@@ -10,7 +10,7 @@ const FrontPage = (props) => {
 
     const history = useHistory();
     const [selectedPlace, setSelectedPlace, setIsWhite] = useContext(context);
-    const [hoveredPlace, setHoveredPlace] = useState( places[0]);
+    const [hoveredPlace, setHoveredPlace] = useState(selectedPlace || places[0]);
     setIsWhite(false);
 
     const handleDetail = (id) => {
@@ -23,12 +23,12 @@ const FrontPage = (props) => {
         });
     }
 
-
-
     const handleOnMouseOver = (e) => {
         places.map(place => {
-            place.name === e.target.alt &&
+            if (place.name === e.target.alt) {
                 setHoveredPlace(place);
+                pushLocalStorage('selected', place);
+            }
         })
     }
 
@@ -39,13 +39,13 @@ const FrontPage = (props) => {
             <div className="description-container">
                 <h1>{hoveredPlace.name}</h1>
                 <p>{hoveredPlace.description}</p>
-                <button onClick={() => handleDetail(1)} className="button-color">Booking</button>
+                <button onClick={() => handleDetail(hoveredPlace.id)} className="button-color">Booking</button>
             </div>
 
             <div className="picture-container">
                 {
                     props.type.name !== 'booking' ? places.map(place =>
-                        <PlacesCard key={place.id} place={place} handleOnMouseOver = {handleOnMouseOver} handleDetail={handleDetail}></PlacesCard>
+                        <PlacesCard key={place.id} place={place} handleOnMouseOver={handleOnMouseOver} handleDetail={handleDetail}></PlacesCard>
                     ) : props.children
                 }
             </div>

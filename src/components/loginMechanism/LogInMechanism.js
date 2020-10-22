@@ -86,7 +86,6 @@ const verificationMail = () => {
         .then(result => {
         }).catch(function (error) {
         });
-
 }
 
 export const forgotPassword = () => {
