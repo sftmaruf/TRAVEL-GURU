@@ -10,7 +10,6 @@
 
 # production
 /build
-firebaseConfig.config.js
 
 # misc
 .DS_Store
@@ -22,4 +21,6 @@ firebaseConfig.config.js
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+firebaseConfig.config.js/
 
